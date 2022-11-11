@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4_eii</title>
+</head>
+<label for="a">Nhập vào cạnh a</label>
+<input type="text" id="a"> <br> <br>
+<label for="b">Nhập vào cạnh b</label>
+<input type="text" id="b"> <br> <br>
+<label for="c">Nhập vào cạnh c</label>
+<input type="text" id="c"> <br> <br>
+<button onclick="mutiplication()">Kiểm tra tam giác cân </button>
+<p id="result"></p>
+<body>
+<script>
+  let result=document.getElementById("result");
+  function mutiplication() {
+      let a = +document.getElementById("a").value;
+      let b = +document.getElementById("b").value;
+      let c = +document.getElementById("c").value;
+      if ((a + b > c) && (a + c > b) && (b + c > a)) {
+          if ((a == b) || (a == c) || (b == c )) {
+              result.innerHTML = "a,b,c là ba cạnh của một tam giác cân";
+          }
+      } else {
+          result.innerHTML = "a,b,c không phải là ba cạnh của một tam giác";
+      }
+  }
+</script>
+
+</body>
+</html>

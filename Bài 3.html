@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 3</title>
+</head>
+
+<label for="a">Nhập a</label>
+<input type="text" id="a"> <br> <br>
+<label for="b">Nhập b</label>
+<input type="text" id="b">
+<button onclick="mutiplication()">Tính nhân</button>
+<h1 id="result"></h1>
+<body>
+
+<script>
+  let result= document.getElementById("result");
+  function mutiplication() {
+    let a=+document.getElementById("a").value;
+    let b=+document.getElementById("b").value;
+    result.innerHTML="Tích của a và b là: " + (a*b);
+
+  }
+
+</script>
+
+</body>
+
+</html>

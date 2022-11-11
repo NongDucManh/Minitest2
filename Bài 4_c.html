@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4_c</title>
+</head>
+<label for="a">Nhập vào a</label>
+<input type="text" id="a"> <br> <br>
+<label for="b">Nhập b</label>
+<input type="text" id="b"> <br> <br>
+<button onclick="mutiplication()">Tổng các số từ a đến b</button>
+<p id="result"></p>
+<body>
+<script>
+  let result=document.getElementById("result");
+  function mutiplication(){
+      let a=+document.getElementById("a").value;
+      let b=+document.getElementById("b").value;
+  if (a>b){
+      result.innerHTML="Sô thứ nhất lớn hơn số thứ hai!";
+  } else {
+      let sosohang=(b-a)+1;
+      let tong=(a+b)*sosohang/2;
+      result.innerHTML="Tổng các số từ a đến b là " + tong;
+  }
+  }
+</script>
+</body>
+</html>

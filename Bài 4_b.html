@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bài 4_b</title>
+</head>
+
+<label for="a">Nhập vào a</label>
+<input type="text" id="a"> <br> <br>
+<label for="b">Nhập b</label>
+<input type="text" id="b"> <br> <br>
+<button onclick="mutiplication()">a^2 và a^b</button>
+<p id="result"></p>
+<body>
+
+<script>
+  let result= document.getElementById("result");
+  function mutiplication() {
+    let a=+document.getElementById("a").value;
+
+    result.innerHTML=" Kết quả a^2 và a^b là: " + (a**2) + " và " + (a**b);
+
+  }
+  </script>
+</body>
+</html>
